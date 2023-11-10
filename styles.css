@@ -1,0 +1,95 @@
+ body {      
+  height: 125vh;
+  margin-top: 80px;
+  padding: 30px;
+  background-size: cover;
+  font-family: sans-serif;
+}
+img{
+  height:400px;
+  width: 400px;
+}
+header {
+  background-color: black;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 5px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 15px 0 black;
+}
+
+header * {
+  display: inline;
+}
+
+header li {
+  margin: 10px;
+}
+
+header li a {
+  color: blue;
+  text-decoration: none;
+}
+
+
+body {
+
+  background-image: url("black5.jpg");
+
+}
+
+h1 {
+  color: navy;
+ 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+marquee {
+  color: navy;
+  width: 130%;
+  font-size: x-large;
+}
+
+button {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: navy;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 900;
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  -webkit-box-shadow: 4px 8px 19px -3px navy;
+  box-shadow: 4px 8px 19px -3px rgba(43, 9, 194, 0.997);
+  transition: all 250ms;
+  overflow: hidden;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #0d046b;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(47, 12, 163, 0.947);
+  box-shadow: 4px 8px 19px -3px rgb(41, 3, 148);
+  transition: all 250ms
+}
+
+button:hover {
+  color: #e8e8e8;
+}
+
+button:hover::before {
+  width: 100%;
+}
+
